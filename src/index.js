@@ -1,12 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {render} from 'react-dom'
+import React from 'react'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {createStore, combineReducers} from 'redux'
+import {connect, Provider} from 'react-redux'
+///////////////////////////////////////////////////////////////
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// COUNTER
+
+import Counter from './Counter'
+
+//////////////////////////////////////////////////////////////
+// ACTIONS
+
+const INCREMENT_FIRST = "INCREMENT_FIRST"
+const DECREMENT_FIRST = "DECREMENT_FIRST"
+const RESET_FIRST = "RESET_FIRST"
+
+const INCREMENT_SECOND = "INCREMENT_SECOND"
+const DECREMENT_SECOND = "DECREMENT_SECOND"
+const RESET_SECOND = "RESET_SECOND"
+
+// initial STATE
+
+const initialState = {
+  one: {
+    count: 0
+  },
+  two: {
+    count: 10
+  }
+}
+
+render(
+  <Counter increment="1" decrement="2" reset="3" count="4" />,
+  document.getElementById('root')
+)
+
