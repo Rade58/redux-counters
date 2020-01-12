@@ -1,2 +1,3 @@
-# counters built with react, STATE MANGED BY: redux, react-redux
+# simple counter app built with react
 
+PURPOSE: PRACTICING STATE MANAGEMENT WITH: redux, react-redux
