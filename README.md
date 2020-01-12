@@ -1,1 +1,2 @@
-# counters built with react, redux, react-redux
+# counters built with react, STATE MANGED BY: redux, react-redux
+

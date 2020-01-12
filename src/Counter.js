@@ -9,10 +9,10 @@ const Counter = ({count, increment, decrement, reset}) => {
 
   return (
     <section className={CounterStyle}>
-      <button className="material-icons"></button>
-      <div>48</div>
-      <button className="material-icons"></button>
-      <button className="material-icons"></button>
+      <button onClick={increment} className="material-icons"></button>
+      <div count={count}></div>
+      <button onClick={decrement} className="material-icons"></button>
+      <button onClick={reset} className="material-icons"></button>
     </section>
   )
 }

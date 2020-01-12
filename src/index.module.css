@@ -4,7 +4,7 @@
     border-style: inset;
     margin: 10vw 2vw;
     width: min-content;
-    display: block;
+    display: inline-block;
     text-align: center;
     padding: 4%;
 }
@@ -25,6 +25,12 @@
     text-shadow: coral 1px 1px;
 }
 
+/*GENERATED CONTENET (ICONS AND ATTRIBUTE)*/
+
+.CounterStyle > div::before {
+    content: attr(count);
+}
+
 
 @supports (font-feature-settings: "liga") {
 
@@ -42,3 +48,5 @@
     
 
 }
+
+
